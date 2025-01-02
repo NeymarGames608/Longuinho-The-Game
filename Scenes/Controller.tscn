@@ -1,0 +1,99 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Sprites/Controller/DPadButtons02.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Controller/AButton01.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Controller/DPadButtons03.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Controller/AButton02.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Controller/RunButton02.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Controller/RunButton.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Controller/ButtonFly02.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Controller/ButtonFly01.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Controller/DPadButtons01.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Controller/Pause01.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Controller/Pause02.png" type="Texture" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 30, 15 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 14.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 14.54
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 16, 16 )
+
+[node name="Controller" type="Node2D"]
+__meta__ = {
+"_edit_vertical_guides_": [ -15.0 ]
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="DPadBase" type="TextureRect" parent="CanvasLayer/Control"]
+margin_left = 91.0
+margin_top = 331.0
+margin_right = 219.0
+margin_bottom = 459.0
+rect_scale = Vector2( 2.14104, 1.94251 )
+texture = ExtResource( 9 )
+
+[node name="DPadMiddle" type="TextureRect" parent="CanvasLayer/Control"]
+margin_left = 196.0
+margin_top = 435.0
+margin_right = 324.0
+margin_bottom = 563.0
+rect_scale = Vector2( 0.445782, 0.466326 )
+texture = ExtResource( 9 )
+
+[node name="Left" type="TouchScreenButton" parent="CanvasLayer/Control"]
+position = Vector2( 102, 442 )
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 3 )
+shape = SubResource( 1 )
+action = "ui_left"
+
+[node name="Jump" type="TouchScreenButton" parent="CanvasLayer/Control"]
+position = Vector2( 823, 479 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+pressed = ExtResource( 4 )
+shape = SubResource( 2 )
+action = "jump"
+
+[node name="Right" type="TouchScreenButton" parent="CanvasLayer/Control"]
+position = Vector2( 252, 442 )
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 3 )
+shape = SubResource( 1 )
+action = "ui_right"
+
+[node name="Run" type="TouchScreenButton" parent="CanvasLayer/Control"]
+position = Vector2( 758, 426 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 5 )
+action = "ui_shift"
+
+[node name="Fly" type="TouchScreenButton" parent="CanvasLayer/Control"]
+visible = false
+position = Vector2( 931, 426 )
+scale = Vector2( 1.59375, 1.625 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 7 )
+shape = SubResource( 3 )
+action = "fly"
+
+[node name="Pause" type="TouchScreenButton" parent="CanvasLayer/Control"]
+visible = false
+position = Vector2( 907, 47 )
+normal = ExtResource( 10 )
+pressed = ExtResource( 11 )
+shape = SubResource( 4 )
+action = "pause"

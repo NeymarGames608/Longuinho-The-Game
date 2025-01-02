@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 250.0
+margin_top = 250.0
+margin_right = 362.0
+margin_bottom = 264.0
+rect_scale = Vector2( 5, 5 )
+text = "Level Completed!"
