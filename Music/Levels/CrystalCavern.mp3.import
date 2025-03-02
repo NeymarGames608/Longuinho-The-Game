@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/CrystalCavern.mp3-6d463a4c267d3e79af5b07487f12249b.mp3str"
+
+[deps]
+
+source_file="res://Music/Levels/CrystalCavern.mp3"
+dest_files=[ "res://.import/CrystalCavern.mp3-6d463a4c267d3e79af5b07487f12249b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

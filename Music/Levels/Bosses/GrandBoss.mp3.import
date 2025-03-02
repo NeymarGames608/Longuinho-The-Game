@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GrandBoss.mp3-0fd55ed4c51e902e0c78fe8e2959b0f6.mp3str"
+
+[deps]
+
+source_file="res://Music/Levels/Bosses/GrandBoss.mp3"
+dest_files=[ "res://.import/GrandBoss.mp3-0fd55ed4c51e902e0c78fe8e2959b0f6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

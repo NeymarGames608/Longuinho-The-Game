@@ -1,0 +1,239 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Music/Levels/VolkansVulkan.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Sprites/Levels/VolkansVulkan/Background.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Levels/VolkansVulkan/VulkanEntrance.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Players/Fling/Fling.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Players/Nina/Nina.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Players/Vigou/Vigou.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Players/Longuinho/Longuinho.png" type="Texture" id=7]
+[ext_resource path="res://Scripts/Cutscenes/EnteringVolkanVulkan1.gd" type="Script" id=8]
+[ext_resource path="res://Tiles/VolkanVulkan/Tiles.tres" type="TileSet" id=9]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Longuinho:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -218, 507 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Vigou:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -167, 507 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Fling:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -121, 504 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Nina:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -70, 498 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Scene"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Longuinho:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -218, 507 ), Vector2( 883, 528 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Vigou:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -167, 507 ), Vector2( 868, 527 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Fling:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -121, 504 ), Vector2( 845, 543 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Nina:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -70, 498 ), Vector2( 880, 547 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 50, 50 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 150, 0, 50, 50 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 50, 50 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 150, 0, 50, 50 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 50, 50 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 150, 0, 50, 50 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 50, 50 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 150, 0, 50, 50 )
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="EnteringVolkanVulkan1" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 9 )
+format = 1
+tile_data = PoolIntArray( 524288, 1, 0, 524289, 1, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0, 524303, 1, 0, 524304, 1, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 1, 0, 589840, 1, 0 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2( 512, 300 )
+transform = Transform2D( 1, 0, 0, 1, 512, 300 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground"]
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+anims/Scene = SubResource( 2 )
+
+[node name="Longuinho" type="AnimatedSprite" parent="."]
+position = Vector2( -218, 507 )
+frames = SubResource( 5 )
+playing = true
+
+[node name="Vigou" type="AnimatedSprite" parent="."]
+position = Vector2( -167, 507 )
+frames = SubResource( 8 )
+playing = true
+
+[node name="Fling" type="AnimatedSprite" parent="."]
+position = Vector2( -121, 504 )
+frames = SubResource( 11 )
+playing = true
+
+[node name="Nina" type="AnimatedSprite" parent="."]
+position = Vector2( -70, 498 )
+frames = SubResource( 14 )
+playing = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="VulkanEntrance" type="Sprite" parent="."]
+position = Vector2( 878, 446 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 3 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

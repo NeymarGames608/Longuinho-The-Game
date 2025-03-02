@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scripts/CurrentLevel/GardenStar.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Controller.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Tiles/GardenStar/Tile1.tres" type="TileSet" id=3]
+[ext_resource path="res://Sprites/Levels/GardenStar/GardenStarAssets07.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Enemies/Enemy01.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Music/Levels/GardenStar.mp3" type="AudioStream" id=6]
+[ext_resource path="res://Scenes/Misc/CarLeft.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/FinishPlate.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Misc/LevelCharacterLoader.tscn" type="PackedScene" id=10]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 40.5, 1065 )
+
+[node name="GardenStar" type="Node2D"]
+position = Vector2( -355, -120 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Tile1" type="TileMap" parent="StaticBody2D"]
+tile_set = ExtResource( 3 )
+show_collision = true
+collision_use_kinematic = true
+format = 1
+tile_data = PoolIntArray( -1114105, 0, 0, -1114104, 0, 0, -1114103, 0, 0, -1114102, 0, 0, -1114101, 0, 0, -1114100, 0, 0, -1114099, 0, 0, -1114098, 0, 0, -1114097, 0, 0, -1114091, 0, 0, -1114090, 0, 0, -1114089, 0, 0, -1114088, 0, 0, -1114087, 0, 0, -1114086, 0, 0, -1114085, 0, 0, -1114084, 0, 0, -1114083, 0, 0, -1114082, 0, 0, -1114081, 0, 0, -1114073, 0, 0, -1114072, 0, 0, -1114071, 0, 0, -1114070, 0, 0, -1114069, 0, 0, -1114067, 0, 0, -1114066, 0, 0, -1114065, 0, 0, -1114064, 0, 0, -1048572, 0, 0, -786431, 0, 0, -786430, 0, 0, -786429, 0, 0, -786428, 0, 0, -589818, 0, 0, -589817, 0, 0, -589816, 0, 0, -589815, 0, 0, -589814, 0, 0, -589813, 0, 0, -589812, 0, 0, -589811, 0, 0, -589810, 0, 0, -589809, 0, 0, -589808, 0, 0, -589807, 0, 0, -589806, 0, 0, -589805, 0, 0, -589804, 0, 0, -589802, 0, 0, -589801, 0, 0, -589800, 0, 0, -589799, 0, 0, -589798, 0, 0, -589797, 0, 0, -589796, 0, 0, -589795, 0, 0, -589794, 0, 0, -589792, 0, 0, -589791, 0, 0, -589790, 0, 0, -589789, 0, 0, -589788, 0, 0, -589787, 0, 0, -589786, 0, 0, -589785, 0, 0, -458708, 0, 0, -262098, 0, 0, -262097, 0, 0, -262096, 0, 0, -262095, 0, 0, -262094, 0, 0, -262093, 0, 0, -262092, 0, 0, -262091, 0, 0, -131015, 0, 0, 65593, 0, 0, 65594, 0, 0, 65595, 0, 0, 65596, 0, 0, 65597, 0, 0, 65598, 0, 0, 65599, 0, 0, 131127, 0, 0, 196648, 0, 0, 196649, 0, 0, 196650, 0, 0, 196651, 0, 0, 196652, 0, 0, 196653, 0, 0, 196654, 0, 0, 196655, 0, 0, 196656, 0, 0, 196657, 0, 0, 196658, 0, 0, 196659, 0, 0, 262176, 0, 0, 262177, 0, 0, 262178, 0, 0, 262179, 0, 0, 262180, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393233, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 0, 0, 393239, 0, 0, 393240, 0, 0, 393241, 0, 0, 393242, 0, 0, 393243, 0, 0, 393244, 0, 0, 393245, 0, 0 )
+
+[node name="InvisibleWall" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -40.5, -431 )
+shape = SubResource( 2 )
+
+[node name="Enemy01" parent="." instance=ExtResource( 5 )]
+position = Vector2( 773, 374 )
+
+[node name="Enemy02" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1614, 375 )
+
+[node name="Enemy03" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3064, 187 )
+
+[node name="Enemy04" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3230, -267 )
+
+[node name="Car" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2508, -585 )
+
+[node name="LevelCharacterLoader" parent="." instance=ExtResource( 10 )]
+
+[node name="FinishPlate" parent="." instance=ExtResource( 8 )]
+position = Vector2( 3111, -1104 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 512, 300 )
+texture = ExtResource( 4 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="Controller" parent="." instance=ExtResource( 2 )]

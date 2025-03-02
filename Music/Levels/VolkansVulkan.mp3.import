@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/VolkansVulkan.mp3-f78543141d08ee5b45c88f4585f4b3b1.mp3str"
+
+[deps]
+
+source_file="res://Music/Levels/VolkansVulkan.mp3"
+dest_files=[ "res://.import/VolkansVulkan.mp3-f78543141d08ee5b45c88f4585f4b3b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

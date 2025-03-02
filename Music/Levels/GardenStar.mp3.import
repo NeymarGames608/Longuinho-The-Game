@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GardenStar.mp3-54be9df2f75b8083d39b0a4facd4ecbc.mp3str"
+
+[deps]
+
+source_file="res://Music/Levels/GardenStar.mp3"
+dest_files=[ "res://.import/GardenStar.mp3-54be9df2f75b8083d39b0a4facd4ecbc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
