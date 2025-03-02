@@ -34,6 +34,7 @@ func _process(delta):
 		_trocar_destino()
 
 func _on_Area2D_body_entered(body):
+<<<<<<< HEAD
 	if body.is_in_group("Player"):
 	# Quando qualquer coisa encosta na área do mini boss, ele perde uma vida
 		vidas -= 1
@@ -46,6 +47,19 @@ func _on_Area2D_body_entered(body):
 		if vidas <= 0:
 			get_tree().change_scene("res://Cutscenes/ToCrystalCavern.tscn")
 			return
+=======
+	# Quando qualquer coisa encosta na área do mini boss, ele perde uma vida
+	vidas -= 1
+	print("Vidas restantes: %d" % vidas)
+
+	# Atualiza o label com a quantidade de vida restante
+	label.text = "Health: %d" % vidas
+
+	# Verifica se o mini boss morreu
+	if vidas <= 0:
+		get_tree().change_scene("res://Scenes/MainMenu.tscn")
+		return
+>>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 
 func _trocar_destino():
 	# Muda o destino baseado no movimento do mini boss

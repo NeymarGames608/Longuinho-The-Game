@@ -50,9 +50,14 @@ func _process(delta):
 
 # Função chamada quando qualquer corpo entra na área da abelha
 func _on_Area2D_body_entered(body):
+<<<<<<< HEAD
 	if body.is_in_group("Player"):
 		# A abelha perde 1 vida ao encostar em qualquer corpo
 		take_damage(1)
+=======
+	# A abelha perde 1 vida ao encostar em qualquer corpo
+	take_damage(1)
+>>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 
 # Função para aplicar dano à abelha
 func take_damage(damage):

@@ -94,4 +94,8 @@ animation = "Fall"
 
 [node name="Camera2D" type="Camera2D" parent="Vigou"]
 current = true
+<<<<<<< HEAD
 zoom = Vector2( 0.5, 0.5 )
+=======
+zoom = Vector2( 0.25, 0.25 )
+>>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795

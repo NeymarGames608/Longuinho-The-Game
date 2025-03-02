@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 [gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://Tiles/GardenStar/Tile1.tres" type="TileSet" id=3]
+=======
+[gd_scene format=2]
+>>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,6 +17,12 @@ size = Vector2( 512, 600 )
 handle_input_locally = false
 render_target_update_mode = 3
 
+<<<<<<< HEAD
+=======
+[node name="Camera2D" type="Camera2D" parent="ViewportContainer/Viewport"]
+current = true
+
+>>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 [node name="ViewportContainer2" type="ViewportContainer" parent="."]
 margin_left = 512.0
 margin_right = 1024.0
@@ -23,8 +33,13 @@ size = Vector2( 512, 600 )
 handle_input_locally = false
 render_target_update_mode = 3
 
+<<<<<<< HEAD
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 show_collision = true
 collision_use_kinematic = true
 format = 1
+=======
+[node name="Camera2D" type="Camera2D" parent="ViewportContainer2/Viewport"]
+current = true
+>>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795

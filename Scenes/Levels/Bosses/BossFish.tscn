@@ -31,6 +31,12 @@ texture = ExtResource( 5 )
 
 [node name="LevelCharacterLoader" parent="." instance=ExtResource( 6 )]
 
+<<<<<<< HEAD
 [node name="Fish" parent="." instance=ExtResource( 2 )]
 
 [node name="Controller" parent="." instance=ExtResource( 7 )]
+=======
+[node name="Controller" parent="." instance=ExtResource( 7 )]
+
+[node name="Fish" parent="." instance=ExtResource( 2 )]
+>>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
