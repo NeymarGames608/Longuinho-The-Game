@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scenes/Enemies/Bosses/CrystalGolem.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Misc/LevelCharacterLoader.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/CurrentLevel/BossCrystalGolem.gd" type="Script" id=4]
 [ext_resource path="res://Music/Levels/Bosses/Boss.mp3" type="AudioStream" id=5]
 [ext_resource path="res://Tiles/CrystalCavern/Tiles.tres" type="TileSet" id=6]
+[ext_resource path="res://Scenes/Controller.tscn" type="PackedScene" id=7]
 
 [node name="BossCrystalGolem" type="Node2D"]
 script = ExtResource( 4 )
@@ -30,3 +31,5 @@ texture = ExtResource( 3 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+
+[node name="Controller" parent="." instance=ExtResource( 7 )]

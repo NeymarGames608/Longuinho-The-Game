@@ -59,16 +59,7 @@ position = Vector2( 3111, -1104 )
 position = Vector2( 512, 300 )
 texture = ExtResource( 4 )
 
-<<<<<<< HEAD
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 
 [node name="Controller" parent="." instance=ExtResource( 2 )]
-=======
-[node name="Controller" parent="." instance=ExtResource( 2 )]
-
-[node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
-
-[connection signal="finished" from="Music" to="." method="_on_Music_finished"]
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795

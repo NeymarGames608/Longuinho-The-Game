@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Sprites/Levels/VolkansVulkan/Background.png" type="Texture" id=1]
 [ext_resource path="res://Music/Levels/Bosses/GrandBoss.mp3" type="AudioStream" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Tiles/VolkanVulkan/Tiles.tres" type="TileSet" id=4]
 [ext_resource path="res://Scripts/CurrentLevel/VolkanVulkan1Boss.gd" type="Script" id=5]
 [ext_resource path="res://Scenes/Enemies/Bosses/Robot.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Controller.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 587 )
@@ -49,3 +50,5 @@ shape = SubResource( 1 )
 position = Vector2( 491, -7 )
 rotation = 1.5708
 shape = SubResource( 1 )
+
+[node name="Controller" parent="." instance=ExtResource( 7 )]

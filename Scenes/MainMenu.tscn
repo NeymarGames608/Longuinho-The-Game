@@ -67,8 +67,4 @@ margin_top = 561.0
 margin_right = 99.0
 margin_bottom = 575.0
 rect_scale = Vector2( 2, 2 )
-<<<<<<< HEAD
 text = "Public Beta Test 2"
-=======
-text = "Public Beta Test 1"
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795

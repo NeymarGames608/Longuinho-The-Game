@@ -13,9 +13,10 @@ func _ready():
 
 # Função para atualizar o número de moedas exibido no Label
 func atualizar_label():
-	coin_label.text = "Moedas: " + str(moedas)  # Atualiza o texto no Label
+	coin_label.text = "Coins: " + str(moedas)  # Atualiza o texto no Label
 
 # Função para incrementar a quantidade de moedas
 func incrementar_moedas():
 	moedas += 1
 	atualizar_label()  # Atualiza o texto do Label com o novo número de moedas
+

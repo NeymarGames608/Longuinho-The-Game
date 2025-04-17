@@ -18,7 +18,6 @@ config/icon="res://icon.png"
 [autoload]
 
 CharacterManager="*res://Scripts/Misc/CharacterManager.gd"
-<<<<<<< HEAD
 CurrentLevel="*res://Scripts/Misc/CurrentLevel.gd"
 Fullscreen_or_Window="*res://Scripts/Fullscreen_or_Window.gd"
 FpsHud="*res://Scenes/FPSHud.tscn"
@@ -28,15 +27,6 @@ MediaManager="*res://Scripts/Misc/MediaManager.gd"
 
 mouse_cursor/custom_image="res://Sprites/Misc/Cursor.png"
 window/stretch/mode="viewport"
-=======
-FpsHud="*res://Scenes/FPSHud.tscn"
-CurrentLevel="*res://Scripts/Misc/CurrentLevel.gd"
-
-[display]
-
-window/stretch/mode="viewport"
-window/stretch/aspect="keep"
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 
 [gui]
 
@@ -88,15 +78,12 @@ fly={
 "deadzone": 0.5,
 "events": [  ]
 }
-<<<<<<< HEAD
-=======
 pause={
 "deadzone": 0.5,
 "events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":80,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 restart={
 "deadzone": 0.5,
 "events": [  ]
@@ -105,7 +92,6 @@ exit={
 "deadzone": 0.5,
 "events": [  ]
 }
-<<<<<<< HEAD
 fullscreen_or_window={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777254,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
@@ -116,12 +102,6 @@ print={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":80,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
-
-[mono]
-
-project/assembly_name="Longuinho 2D"
-=======
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 
 [physics]
 

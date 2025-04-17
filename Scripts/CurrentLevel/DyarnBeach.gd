@@ -17,8 +17,5 @@ func _ready():
 #	pass
 
 
-<<<<<<< HEAD
-=======
 func _on_Music_finished():
 	music.play()
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795

@@ -13,11 +13,7 @@ onready var sprite = $AnimatedSprite
 
 # Função para verificar se a queda foi muito alta e recarregar a fase
 func check_fall():
-<<<<<<< HEAD
 	if position.y > 1200:  # Se cair abaixo de Y = 1200
-=======
-	if position.y > 600:  # Se cair abaixo de Y = 600
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 		match CurrentLevel.current_level:
 			0:
 				get_tree().change_scene("res://Scenes/MainMenu.tscn")
@@ -30,7 +26,6 @@ func check_fall():
 				get_tree().change_scene("res://Scenes/Levels/DyarnBeach.tscn")
 			2.5:
 				get_tree().change_scene("res://Scenes/Levels/Bosses/BossFish.tscn")
-<<<<<<< HEAD
 			3:
 				get_tree().change_scene("res://Scenes/Levels/CrystalCavern.tscn")
 			3.5:
@@ -39,8 +34,6 @@ func check_fall():
 				get_tree().change_scene("res://Scenes/Levels/VolkanVulkan1.tscn")
 			4.5:
 				get_tree().change_scene("res://Scenes/Levels/Bosses/VolkanVulkan1Boss.tscn")
-=======
->>>>>>> f2ac463c33550f3e8a9d7b85bce6371161682795
 			_:
 				get_tree().change_scene("res://Scenes/MainMenu.tscn")  # Padrão se não achar um caso correspondente
 
